@@ -6,27 +6,18 @@ import { FavList } from '../favlist/FavList';
 import { ListPokemon } from './ListPokemon';
 
 export const List = () => {  
- 
- //  const [pokemon, setPokemon] = useState([]);
 
+  const pokemons = useFetchPokemon();
 
+  console.log("pokemons");
+  console.log(pokemons);
   
-  const {pokemons} = useFetchPokemon();
-
-
- 
-
-
-  
-  return (
-      
+  return (     
     <>
-
-    <h1> Lista de pokemones</h1>
-    <ListPokemon list={pokemons}/>
-
-  
-
+      <h1> Lista de pokemones</h1>
+      
+        <ListPokemon list={pokemons}/>
+       
    </>
   );
 }

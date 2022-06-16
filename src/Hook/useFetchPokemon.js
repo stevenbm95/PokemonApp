@@ -5,27 +5,21 @@ export const useFetchPokemon =  () => {
 
     const [pokemones, setPokemones] = useState([]);
 
-
-
-
     useEffect( () => {
        getPokemons()
             .then( pokemons =>{
-
-                setPokemones( {
+                setPokemones( 
                     pokemons
+                     )       
+                     
+                    });
                     
-                })
-
-                    
-                });
-       
-      },[]);
+                },[]);
+                
+                console.log("pokemons");
+                console.log(pokemones);
+          
     
-    
-    
-  
-  
     return pokemones; 
 
 
