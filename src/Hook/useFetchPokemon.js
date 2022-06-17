@@ -16,9 +16,7 @@ export const useFetchPokemon =  () => {
                     
                 },[]);
                 
-                console.log("pokemons");
-                console.log(pokemones);
-          
+                    
     
     return pokemones; 
 

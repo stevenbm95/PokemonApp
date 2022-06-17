@@ -13,3 +13,16 @@
     display: flex;
 
 }
+
+
+.container-list-pokemon > ul > li{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container-list-pokemon > ul > li >svg{
+    
+}

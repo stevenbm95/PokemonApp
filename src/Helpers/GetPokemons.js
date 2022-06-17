@@ -6,11 +6,12 @@ export const getPokemons = async() => {
     const {results} = await resp.json();
     
     const pokemones = results.map(pokemon =>{
-      return pokemon    
+      return pokemon = {
+        name: pokemon.name,
+        favoriteState: false
+      }  
     });
 
-
-   
 
   return pokemones;
 }
